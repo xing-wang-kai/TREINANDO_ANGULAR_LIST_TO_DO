@@ -1,0 +1,9 @@
+<div class="container ">
+  <div class="nota mb-3 card" *ngFor="let nota of notas">
+    <h2 class="text-center p-3 mb-2 bg-danger text-white">{{nota.titulo}}</h2>
+    <div class="card-body">
+      <p class="card_text">{{nota.nota}}</p>
+      <small class="nota__data">{{nota.data | date: 'short'}}</small>
+    </div>
+  </div>
+</div>

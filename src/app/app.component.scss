@@ -1,0 +1,16 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background-color: var(--textPrimary);
+
+  margin: 0;
+  a{
+    text-decoration: none;
+    padding: 10px;
+    margin: auto 10px auto 10px;
+    color: var(--secondary);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+  }
+}

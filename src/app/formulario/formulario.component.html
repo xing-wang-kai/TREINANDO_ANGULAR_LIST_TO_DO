@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <div class="card">
+    <div class="p-3 mb-2 bg-danger text-white">
+      <h2>Insira aqui sua Nota</h2>
+    </div>
+    <fieldset>
+      <form class="form card-body" (ngSubmit)="adicionar()">
+        <div class="mb-3 form-group">
+          <label class="form-label" for="titulo">Titulo: </label>
+          <input class="form-control" [(ngModel)]="titulo" type="text" name="titulo" placeholder="insira aqui a sua nota"/>
+        </div>
+        <div class="mb-3 form-group">
+          <label class="form-label" for="nota">nota: </label>
+          <textarea class="form-control" [(ngModel)]="nota" type="text" name="nota" placeholder="insira aqui a sua nota"></textarea>
+        </div>
+        <div class="mb-3 form-group">
+          <button class="btn btn-danger" type="submit">CADASTRAR!</button>
+        </div>
+      </form>
+    </fieldset>
+  </div>
+</div>
